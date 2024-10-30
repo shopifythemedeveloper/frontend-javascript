@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Web Development</title>
+        <link rel="stylesheet" href="assets/fonts/font-faces.css">
+        <link rel="stylesheet" href="assets/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="breadcrumbs">
+                <span>Home</span>
+                <span class="breadcrumbs-divider"><img src="assets/icons/chevron-right.svg"></span>
+                <span>Shop</span>
+                <span class="breadcrumbs-divider"><img src="assets/icons/chevron-right.svg"></span>
+                <span>Men</span>
+                <span class="breadcrumbs-divider"><img src="assets/icons/chevron-right.svg"></span>
+                <span class="active">T-shirts</span>
+            </div>
+            <section class="main-product">
+                <div class="main-product__gallery">
+                    <div class="main-product__thumbnails">
+                        <div class="main-product__thumbnail active">
+                            <img src="assets/images/main-product-image.png" alt="One Life Graphic T-Shirt">
+                        </div>
+                        <div class="main-product__thumbnail">
+                            <img src="assets/images/second-product-image.png" alt="One Life Graphic T-Shirt - Back">
+                        </div>
+                        <div class="main-product__thumbnail cover">
+                            <img src="assets/images/third-product-image.png" alt="Model Wearing One Life Graphic T-Shirt">
+                        </div>
+                    </div>
+                    <div class="main-product__featured-image">
+                        <img src="assets/images/main-product-image.png" alt="One Life Graphic T-Shirt">
+                    </div>
+                </div>
+                <div class="main-product__info">
+                    <h1 class="main-product__title">One life graphic tshirt</h1>
+                    <div class="main-product__stars">
+                        <div class="main-product__stars-icons">
+                            <img src="assets/icons/reviews-star.svg">
+                            <img src="assets/icons/reviews-star.svg">
+                            <img src="assets/icons/reviews-star.svg">
+                            <img src="assets/icons/reviews-star.svg">
+                            <img src="assets/icons/reviews-half-star.svg">
+                        </div>
+                        <div class="main-product__stars-text">
+                            4.5/<span>5</span>
+                        </div>
+                    </div>
+                    <div class="main-product__price">
+                        <div class="main-product__price-main">$260</div>
+                        <div class="main-product__price-rrp">$300</div>
+                        <div class="main-product__price-discount">-40%</div>
+                    </div>
+                    <p class="main-product__description">
+                        This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.
+                    </p>
+                    <div class="option-parameter">
+                        <div class="option-parameter__name">Select Colors</div>
+                        <div class="option-parameter__options">
+                            <label class="option-parameter__option">
+                                <input type="radio" name="color" id="color-1" value="brown" checked>
+                                <div class="color" style="background-color: #4F4631;"></div>
+                            </label>
+                            <label class="option-parameter__option">
+                                <input type="radio" name="color" id="color-2" value="green">
+                                <div class="color" style="background-color: #314F4A;"></div>
+                            </label>
+                            <label class="option-parameter__option">
+                                <input type="radio" name="color" id="color-3" value="navy">
+                                <div class="color" style="background-color: #31344F;"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="option-parameter">
+                        <div class="option-parameter__name">Select Size</div>
+                        <div class="option-parameter__options sizes">
+                            <label class="option-parameter__option">
+                                <input type="radio" name="size" id="size-1" value="Small" checked>
+                                <div class="size">Small</div>
+                            </label>
+                            <label class="option-parameter__option">
+                                <input type="radio" name="size" id="size-2" value="Medium">
+                                <div class="size">Medium</div>
+                            </label>
+                            <label class="option-parameter__option">
+                                <input type="radio" name="size" id="size-3" value="Large">
+                                <div class="size">Large</div>
+                            </label>
+                            <label class="option-parameter__option">
+                                <input type="radio" name="size" id="size-4" value="X-Large">
+                                <div class="size">X-Large</div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="main-product__quantity-and-atc">
+                        <div class="main-product__quantity">
+                            <button class="main-product__quantity-button" id="decrement"><img src="/assets/icons/minus.svg"></button>
+                            <input type="number" class="main-product__quantity-input" value="1">
+                            <button class="main-product__quantity-button" id="increment"><img src="/assets/icons/plus.svg"></button>
+                        </div>
+                        <button class="main-product__add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
