@@ -37,7 +37,12 @@
                     </div>
                 </div>
                 <div class="main-product__info">
-                    <h1 class="main-product__title">One life graphic tshirt</h1>
+                    <h1 class="main-product__title">
+                        One life graphic tshirt
+                        <span class="current-variant" style="font-family: var(--body-font);">
+                            1
+                        </span>
+                    </h1>
                     <div class="main-product__stars">
                         <div class="main-product__stars-icons">
                             <img src="assets/icons/reviews-star.svg">
@@ -58,54 +63,58 @@
                     <p class="main-product__description">
                         This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.
                     </p>
-                    <div class="option-parameter">
-                        <div class="option-parameter__name">Select Colors</div>
-                        <div class="option-parameter__options">
-                            <label class="option-parameter__option">
-                                <input type="radio" name="color" id="color-1" value="brown" checked>
-                                <div class="color" style="background-color: #4F4631;"></div>
-                            </label>
-                            <label class="option-parameter__option">
-                                <input type="radio" name="color" id="color-2" value="green">
-                                <div class="color" style="background-color: #314F4A;"></div>
-                            </label>
-                            <label class="option-parameter__option">
-                                <input type="radio" name="color" id="color-3" value="navy">
-                                <div class="color" style="background-color: #31344F;"></div>
-                            </label>
+                    <form>
+                        <div class="option-parameter">
+                            <div class="option-parameter__name">Select Colors</div>
+                            <div class="option-parameter__options">
+                                <label class="option-parameter__option">
+                                    <input type="radio" name="color" id="color-1" value="brown" checked>
+                                    <div class="color" style="background-color: #4F4631;"></div>
+                                </label>
+                                <label class="option-parameter__option">
+                                    <input type="radio" name="color" id="color-2" value="green">
+                                    <div class="color" style="background-color: #314F4A;"></div>
+                                </label>
+                                <label class="option-parameter__option">
+                                    <input type="radio" name="color" id="color-3" value="navy">
+                                    <div class="color" style="background-color: #31344F;"></div>
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="option-parameter">
-                        <div class="option-parameter__name">Select Size</div>
-                        <div class="option-parameter__options sizes">
-                            <label class="option-parameter__option">
-                                <input type="radio" name="size" id="size-1" value="Small" checked>
-                                <div class="size">Small</div>
-                            </label>
-                            <label class="option-parameter__option">
-                                <input type="radio" name="size" id="size-2" value="Medium">
-                                <div class="size">Medium</div>
-                            </label>
-                            <label class="option-parameter__option">
-                                <input type="radio" name="size" id="size-3" value="Large">
-                                <div class="size">Large</div>
-                            </label>
-                            <label class="option-parameter__option">
-                                <input type="radio" name="size" id="size-4" value="X-Large">
-                                <div class="size">X-Large</div>
-                            </label>
+                        <div class="option-parameter">
+                            <div class="option-parameter__name">Select Size</div>
+                            <div class="option-parameter__options sizes">
+                                <label class="option-parameter__option">
+                                    <input type="radio" name="size" id="size-1" value="small" checked>
+                                    <div class="size">Small</div>
+                                </label>
+                                <label class="option-parameter__option">
+                                    <input type="radio" name="size" id="size-2" value="medium">
+                                    <div class="size">Medium</div>
+                                </label>
+                                <label class="option-parameter__option">
+                                    <input type="radio" name="size" id="size-3" value="large">
+                                    <div class="size">Large</div>
+                                </label>
+                                <label class="option-parameter__option">
+                                    <input type="radio" name="size" id="size-4" value="x-large">
+                                    <div class="size">X-Large</div>
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="main-product__quantity-and-atc">
-                        <div class="main-product__quantity">
-                            <button class="main-product__quantity-button" id="decrement"><img src="/assets/icons/minus.svg"></button>
-                            <input type="number" class="main-product__quantity-input" value="1">
-                            <button class="main-product__quantity-button" id="increment"><img src="/assets/icons/plus.svg"></button>
+                        <div class="main-product__quantity-and-atc">
+                            <div class="main-product__quantity">
+                                <button class="main-product__quantity-button" id="decrement"><img src="/assets/icons/minus.svg"></button>
+                                <input type="number" class="main-product__quantity-input" value="1" min="1">
+                                <button class="main-product__quantity-button" id="increment"><img src="/assets/icons/plus.svg"></button>
+                            </div>
+                            <button class="main-product__add-to-cart">Add to Cart</button>
                         </div>
-                        <button class="main-product__add-to-cart">Add to Cart</button>
-                    </div>
+                    </form>
                 </div>
             </section>
+            <div class="atc-notice">
+            </div>
         </div>
     </body>
 </html>
